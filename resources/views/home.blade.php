@@ -55,9 +55,9 @@
                 <div>
                     <h3>Mes réalisations</h3>
                 </div>
-                <div>
-                    <div><a href="https://atlas-inway.in"><img src="" alt=""></a></div>
-                    <div><p>atlas-inway</p></div>
+                <div class="siteList">
+                    <div class="imgSite"><a target="blank" href="https://atlas-inway.in"><img src="{{url('/img/Logo_InWay.png')}}" alt="atlas-inway"></a></div>
+                    <div class="nameList"><p>atlas-inway</p></div>
                 </div>
             </div>
         </main>

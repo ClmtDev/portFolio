@@ -159,6 +159,10 @@ h1 {
   text-align: start;
 }
 
+#real .siteList .imgSite a img {
+  max-width: 1200px;
+}
+
 #messageError {
   height: 70vh;
   width: 100%;
@@ -185,6 +189,7 @@ h1 {
 
 #mentions-content {
   margin: 50px auto;
+  color: #000;
 }
 #mentions-content .mentions-para {
   margin: 10px 0;
