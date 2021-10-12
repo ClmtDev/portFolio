@@ -1,0 +1,43 @@
+@import 'mixin';
+
+
+#ident {
+    max-width: 400px;
+    width: 100%;
+    padding-top: 120px;
+    margin-bottom: 60px;
+    color: $primary-color;
+
+    h2 {
+        font-size: 30px;
+        margin-left: 60px;
+    }
+}
+#comp {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    background-image: linear-gradient(45deg, $primary-color, $third-color);
+    border-radius: 5px;
+    transform: skewY(-3deg);
+    padding: 15px;
+    #desc {
+        max-width: 80%;
+        margin-top: 50px;
+        transform: skewY(3deg);
+        display: flex;
+        align-items: flex-start;
+        margin-left: 15%;
+        .desc-part {
+            text-align: center;
+            width: 50%;
+            ul {
+                margin-top: 20px;
+                li {
+                    line-height: 25px;
+                    text-align: start;
+                }
+            }
+        }
+    }
+}

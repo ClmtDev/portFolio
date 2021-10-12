@@ -1,0 +1,35 @@
+@import 'reset';
+@import 'header';
+@import 'contact.scss';
+@import 'home';
+@import 'mixin';
+@import 'error';
+@import 'footer';
+@import 'mentions';
+
+h1 {
+    font-size: 36px;
+    text-decoration: underline;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 22px;
+    color: #fff;}
+
+#body-main{
+    min-height: 100vh;
+    background: $secondary-color;
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.wrapper{
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}

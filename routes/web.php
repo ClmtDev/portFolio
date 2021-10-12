@@ -1,5 +1,8 @@
 <?php
 
+use App\Http\Controllers\ContactController;
+use App\Http\Controllers\HomeController;
+use App\Http\Controllers\PortFolioController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,6 +16,21 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+Route::get(
+    '/',
+    [HomeController::class, 'home']
+)->name('home');
+
+Route::get('portfolio', [PortFolioController::class, 'list']);
+Route::get('portfolio/{tag}', [PortFolioController::class, 'single'])->where('tag', '[0-9]+');
+
+Route::get('mentions', function () {
+    return view('mentions');
+})->name('mentions');
+
+Route::get('contact', [ContactController::class, 'create'])->name('contact.create');
+Route::post('contact', [ContactController::class, 'confirmed']);
+
+Route::get('/{err}',function () {
+    return view('error');
 });

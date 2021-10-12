@@ -1,0 +1,14 @@
+@import 'mixin';
+
+#footer{
+    background-color: $third-color;
+    height: 60px;
+    display: flex;
+    align-items:center;
+
+    ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}
